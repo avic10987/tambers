@@ -1,0 +1,51 @@
+
+ @keyframes fade-in {
+        from {
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        1% {
+            visibility: visible;
+            opacity: 0;
+        }
+    
+        to {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+
+.fade-in {
+    animation: fade-in 300ms ease-in-out forwards;
+}
+
+
+@keyframes fade-out {
+    from {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    99% {
+        visibility: visible;
+        opacity: 0;
+    }
+    to {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+.fade-out {
+    animation: fade-out 300ms ease-in-out forwards;
+}
+
+@keyframes slideshow {
+    25% { opacity: 1;}
+    33.33% { opacity: 0;} 
+    91.66% { opacity: 0;}
+    100% { opacity: 1;}
+ }
+ 
