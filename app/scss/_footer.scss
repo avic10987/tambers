@@ -1,0 +1,24 @@
+.footer {
+    max-width: 100%;
+    min-height: 100px;
+    position: relative;
+    
+    background-color:black;
+    color: $tambersGold;
+
+    &__wrapper {
+        padding: 3rem;
+    }
+
+    &__contact {   
+        p {
+            display: inline;
+            padding: 1rem;
+        }
+        @include breakpoint-down(small) {
+            flex-direction: column;
+        }
+    }
+
+ 
+}

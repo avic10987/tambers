@@ -1,31 +1,68 @@
 .header {
-    background-color: $tambersRed;
-    
+  background-color: transparent;
+  z-index: 10;
+  position: fixed;
+  font-family: $Monts;
+  min-width: 100%;
+
+  transition: background-color .5s ease;
+
+////////////// on scroll styles /////////////
+  &__scrolling-active {
+      background-color: black;
+
+      .header__logo { 
+        img.large { 
+          height: 3rem;}
+      }
+
+      @include breakpoint-down(medium) { //tablet & mobile on scroll
+        min-height: 40px;
+        background-color: transparent;
+        .header__menu {
+          background-color: black;
+          margin-top: 42px;
+          padding: 12px;
+        }
+        .header__logo {
+          img.small {
+            display: none;
+          }
+        }
+      }
+    }
+
+////////////// non scroll styles /////////////
+
     a {
-        font-family: $arimo; 
-        font-size: .875rem;
         color: white;
+        font-size: .875rem;
         font-weight: 500;
         letter-spacing: .0625rem;
         text-transform: uppercase;
       }
 
     nav {
+        overflow: hidden;
         padding-left: .9375rem;
-        padding-right: 3.75rem;
+        padding-right: .9375rem;
+        position: relative;
+
     }
 
   &__logo {
 
     img {
-        padding-top: .75rem;
-        padding-bottom: .85rem;
+        padding-top: 1rem;
+        padding-left: 2rem;
+
     }
     img.small { //mobile
-        height: 6.25rem; // 100px
+        height: 4.45rem; // 100px
+        padding-left: 1rem;
     }
     img.large { //desktop
-        height: 7rem; //140px
+        height: 6.45rem; //140px
     }
   }
 
@@ -34,13 +71,15 @@
   &__menu { 
     > span {
         display: block;
-        width: 26px;
         height: 2px;
-        background-color: $tambersGold;
+        transform-origin: 3px 1px;
+        width: 26px;
         &:not(:last-child) {
             margin-bottom: 5px;
         }
-        transform-origin: 3px 1px;
+        
+        background-color: $tambersGold;
+
         transition: all ease-in-out 300ms;
         
     }
@@ -62,29 +101,35 @@
           transform: rotate(-45deg);
        }
     }
+    
+
   }
   
   //dropdown menu for mobile 
   
   .dropdown {
-    opacity: 0;
-    background-color: $tambersRed;
+    opacity: 1;
     position: fixed;
-    top: 8.125rem;
+    top: 0;
     bottom: 0px;
     left: 0px;
     right:0px;
-    z-index: 4;
+    visibility: hidden;
+    z-index: 0;
     
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.99)
+      );
 
     a {
-        
         display: block;
-        text-align: center;
         margin-bottom: 25px;
         &:first-child {
-            margin-top: 100px;
+            margin-top: 200px;
         }
+        text-align: center;
+
         
         font-size: 1.075rem;
         color: $tambersGold;
@@ -103,7 +148,7 @@
 
 
       .link {
-        padding-right: 1.475rem;
+        padding-right: 1.745rem;
       }
 
   }
@@ -111,14 +156,14 @@
   //non-carryout-button animations
 
   &__underline::after {
-      
+      bottom: -.5em;
       content: '';
-      position: relative;
       display: block;
       height: .1em;
+      position: relative;
       width: 0%;
-      background-color: white;
-      bottom: -.5em;
+
+      background-color:$tambersGold;
 
       transition: all ease-in-out 300ms;
   }
@@ -130,18 +175,19 @@
   
   //carryout button style and animations
   &__button {
-          margin-left: 6.2rem;
-          margin-right: 3rem;
           border: 2px solid white;
           border-radius: .130rem;
           background-color: transparent;
+          margin-right: 3rem;
+
           
 
           a {
-          padding: .575em 1.8704em;
           display: inline-block;
+          padding: .575em 1.8704em;
+          
           color: white;
-          font-weight: 700;
+          font-weight: 600;
 
           transition: all ease-in-out 300ms;
           }
@@ -150,12 +196,13 @@
         }
 
   &__button:hover {
-    background-color: white;
-    border: 2px solid white;
+    background-color: $tambersGold;
+    border: 2px solid $tambersGold;
     a {
-        color: $tambersRed;
+        color: black;
     }
 }
 
 }
+
 

@@ -1,0 +1,188 @@
+.menuWrapper {
+    margin: auto;
+    min-height: 150vh;
+    position: relative;
+    text-align: center;
+}
+
+.menuGroup {
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    text-align: center;
+
+}
+
+.menu {
+    font-size: .9375rem;
+    max-width: 100%;
+    min-height: 1200px;
+    padding: 3.125rem 7.8125rem;
+    position: relative;
+    text-align: center;
+    
+    @include breakpoint-down(medium) { //mobile +tablet styles
+        padding: 6.875rem 2.8125rem;
+        min-height: 350vh;
+    }
+    
+    &__logo {
+        height: 12.5rem;
+    }
+
+    &__carryout {
+        text-align: center;
+
+    }
+
+    &__category {
+        font-size: 1rem;
+        line-height: 1.4;
+        padding: 4.1rem 0;
+        
+    }
+
+    &__items__grid {
+        display: grid;
+        gap: 2.5rem;
+        grid-template-columns: repeat(3, 1fr);
+
+        @include breakpoint-down(medium) { //mobile +tablet styles
+            grid-template-columns: 1fr;
+            }
+        
+    }
+
+    &__item {
+        text-align: initial;
+
+        &__name {
+            display: inline;
+
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
+        &__price {
+            display: inline;
+            float: right;
+        }
+
+        &__description {
+            margin:0;
+            text-transform: lowercase;
+            
+        }
+
+    }
+
+    &__toggles {
+        display: grid;
+        gap: 2.5rem;
+        grid-template-columns: repeat(4, 1fr);
+        margin: auto;
+        padding-top: 402.5rempx;
+        width: 75%;
+        
+        @include breakpoint-down(medium) { //mobile +tablet styles
+            gap: 15px;
+            grid-template-columns: repeat(2, 1fr);
+            }
+
+        &__button{
+            cursor: pointer;
+            display: inline;
+
+            background-color: transparent;
+            border: 2px solid black;
+            border-radius: .130rem;
+            color: black;
+            font-weight: 500;
+            padding: .575em 1.8704em;
+
+            @include breakpoint-down(small) {
+                //font-size: 11px;
+                flex-wrap: wrap;
+            }
+
+            transition: all ease-in-out 200ms;
+        }
+
+        &__button:hover {
+            background-color: black;
+            color: $tambersGold;
+    
+        }
+    }
+
+}
+
+.dinein {
+  color: rgb(53, 53, 53); 
+  background-color: $tambersGold;     
+}
+
+.currentMenu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.takeout {
+
+    @include breakpoint-down(medium) {
+        min-height: 350vh;
+    }
+
+    background-image: 
+    linear-gradient(
+             rgba(0, 0, 0, .99),
+             rgba(0, 0, 0, 0.6)
+             ), 
+             url(../../images/burger2.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
+     
+     color: $tambersGold;
+ 
+     .menu__toggles__button {
+         background-color: black;
+         border: 2px solid $tambersGold;
+         color: $tambersGold;
+         
+     }
+ 
+     .menu__toggles__button:hover {
+         background-color: $tambersGold;
+         color: black;
+ 
+     }
+ 
+     .menu__toggles {
+         grid-template-columns: 1fr 1fr;
+ 
+     }
+    
+    .menu_wrapper{
+     min-height: 200vh;
+    }
+ }
+ 
+ .hiddenTakeout {
+    opacity: 0;
+    visibility: hidden;
+
+ }
+
+.current__takeout {
+    opacity: 1;
+    visibility: visible;
+
+}

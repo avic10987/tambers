@@ -7,21 +7,28 @@
     <link rel="stylesheet" href="./app/scss/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@100;300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
+<div class="site_wrapper">
+
+ <!----------------------------HEADER----------------------------------------->
+
 <header class="header">
 
     <div class="dropdown hide-for-desktop">
-        <a href="#">Home</a>
-        <a href="#">Menu</a>
-        <a href="#">Contact Us</a>
-        <a href="#">Our Story</a>
-        <a href="#">Carry Out</a>
+        <a href="#" class="dropdownLink">Home</a>
+        <a href="#Overview" class="dropdownLink">Our Story</a>
+        <a href="#Menu" class="dropdownLink">Menu</a>
+        <a href="#Carryout" class="dropdownLink">Carry Out</a>
     </div>
 
     <nav class = "flex flex-jc-sb flex-ai-c">
         <a href="#" class="header__logo">
-            <img class = "small hide-for-desktop" src="./images/tambers_logo_cropped.png" alt="Tambers">
-            <img class = "large hide-for-mobile" src="./images/tambers_logo_cropped.png" alt="Tambers">
+            <img class = "small hide-for-desktop" src="./logo/tambers_logo-text_only-transperent.png" alt="Tambers">
+            <img class = "large hide-for-mobile" src="./logo/tambers_logo-text_only-transperent.png" alt="Tambers">
         </a>
 
         <a href="#" id = "btnHamburger" class = "header__menu open hide-for-desktop">
@@ -32,47 +39,1027 @@
 
     <div class="hide-for-mobile" >
         <li class="header__links flex-jc-c header__underline">
-            <a href="#" class = "link">Menu</a>
+            <a href="#Overview" class = "link">Our Story</a>
         </li>
         <li class="header__links flex-jc-c header__underline">
-            <a href="#" class = "link">Contact Us</a>
-        </li>
-        <li class="header__links flex-jc-c header__underline">
-            <a href="#" class = "link">Our Story</a>
+            <a href="#Menu" class = "link">Menu</a>
         </li>
         <li class="header__links flex-jc-c flex-ai-c header__button">
-            <a href="#" class = "carryout">Carry out</a>
+            <a href="#Carryout" class = "carryout">Carry out</a>
         </li>
 
     </div>
     </nav>
 </header>
 
+ <!----------------------------HERO------------------------------------------->
 
 <body>
     <section class="hero">
-        <div class="hero__slides">
-            <div class="hero__slide">
+        <div class="hero__slide">
+            <div class="hero__slide__text">
                 <h1>Tambers at Home</h1>
                 <p>Relax, our full menu is available for pickup and delivery</p>
-            </div>
-            <div class="hero__slide">
+        </div>
+        </div>
+        <div class="hero__slide">
+            <div class="hero__slide__text">
                 <h1>Serving Charles Village since 1991</h1>
                 <p>Experience a loyal community treasure</p>
             </div>
-            <div class="hero__slide">
-                <h1>The best of Western and Indian Cuisine</h1>
+        </div>
+        <div class="hero__slide">
+            <div class="hero__slide__text">
+                <h1>The Best of Western and Indian Cuisine</h1>
+            </div>
+        </div>
+    </section>
+
+     <!----------------------------OVERVIEW------------------------------------>
+
+    <section class="overview" id="Overview">
+        <div class="overview__grid">
+
+            <div class="overview__description">
+                <h2>
+                    Tamber's restaurant has been serving the Charles Village community since 1991. 
+                </h2>
+                <br />
+                <p>
+                    It is the only Baltimore restaurant which serves both Indian and Western cuisine. Our diverse menu can fulfill any appetite.
+                <br />
+                <br />
+                    Our restaurants 50s inspired theme brings vibrancy and life to baltimores only destination for both western and indian cuisine. Don't have time to Dine In? Tambers has a great new Carry Out Menu, with all the same great Tambers dishes prepared to order.
+                </p>
+                <br />
+                <br />
+                <a href = "tel:4102435777" class="overview__button">
+                    ORDER NOW
+                </a>
+            </div>
+
+            <div class="overview__contact">
+                <p>
+                   PHONE 
+                   <br />
+                   <br />
+                   410-243-5777
+                </p>
+                <br />
+                <p>
+                    LOCATION 
+                    <br />
+                    <br />
+                    3327 Saint Paul Street
+                    <br />
+                    (at 34th Street)
+                    <br />
+                    Baltimore, MD 21218
+                 </p>
+                <br />
+                 <p>
+                    HOURS 
+                    <br />
+                    <br />
+                    <b>Mon - Thu </b>10am - 10pm
+                    <br />
+                    <b>Fri </b> 10am - 11pm
+                    <br />
+                    <b>Sat </b> 9am - 11pm
+                    <br />
+                    <b>Sun </b> 9am - 10pm
+                 </p>
+                
             </div>
         </div>
 
+    </section>
 
-        <div class="hero__text">
-            <h1>yerr fegfer</h1>
+    <div class="break" style= "background-image: url(./images/AdobeStock_228144922.jpeg)"></div>
+
+     <!----------------------------DINEINE----------------------------------->
+     
+    <section class="menu dinein" id="Menu">
+        <img src="./logo/tambers_logo_full-transperent-red.png" alt="" class="menu__logo">
+
+        <div class="menu__toggles">
+            <label class="menu__toggles__button dinein dinein_toggle" id ="western">Western</label>
+            <label class="menu__toggles__button dinein dinein_toggle" id="indian">Indian</label>
+            <label class="menu__toggles__button dinein dinein_toggle" id="brunch">Brunch</label>
+            <label class="menu__toggles__button dinein dinein_toggle" id="dessert">Dessert+</label>
+        </div>
+        
+           
+        <div class="menuWrapper">
+             <!----------------------------Western Food------------------------>
+            <div class="currentMenu menuGroup" id ="western"> 
+            <p class="menu__category"> Tasty Tizers</p>
+            <div class="menu__items__grid">
+                <div class="menu__item">
+                    <p class="menu__item__name">
+                        Fried Calamari
+                    </p>
+                    <span class="menu__item__price">$ 10.95</span>
+                    <p class="menu__item__description"> 
+                        served with marinara sauce
+                    </p>
+                </div>
+                <div class="menu__item">
+                    <p class="menu__item__name">
+                        Fried Shrimp
+                    </p>
+                    <span class="menu__item__price">$ 8.95</span>
+                    <p class="menu__item__description"> 
+                        6 jumbo shrimp
+                    </p>
+                </div>
+                <div class="menu__item">
+                    <p class="menu__item__name">
+                        Buffalo Tenders
+                    </p>
+                    <span class="menu__item__price">$ 8.95</span>
+                    <p class="menu__item__description"> 
+                        tender, juicy. served with celery, <br/> ranch dressing 
+                    </p>
+                </div>
+
+                <div class="menu__item">
+                    <p class="menu__item__name">
+                        Fried Zucchini
+                    </p>
+                    <span class="menu__item__price">$ 8.95</span>
+                    <p class="menu__item__description"> 
+                        ranch dressing 
+                    </p>
+                </div>
+                <div class="menu__item">
+                    <p class="menu__item__name">
+                        Buffalo Wings
+                    </p>
+                    <span class="menu__item__price">$ 8.95</span>
+                    <p class="menu__item__description"> 
+                    celery and blue cheese 
+                    </p>
+                </div>
+                <div class="menu__item">
+                    <p class="menu__item__name">
+                        Fried Clam Strips
+                    </p>
+                    <span class="menu__item__price">$ 6.95</span>
+                    <p class="menu__item__description"> 
+                        served with cocktail sauce
+                    </p>
+                </div>
+            </div>
+            
+
+            <p class="menu__category"> Submarines</p>
+            <div class="menu__items__grid">
+                <div class="menu__item">
+                    <p class="menu__item__name">
+                        Cheese Steak
+                    </p>
+                    <span class="menu__item__price">$ 10.95</span>
+                    <p class="menu__item__description"> 
+                        lettuce, tomato, onions, provolone
+                    </p>
+                </div>
+                <div class="menu__item">
+                    <p class="menu__item__name">
+                        Italian Cheese Steak
+                    </p>
+                    <span class="menu__item__price">$ 10.95</span>
+                    <p class="menu__item__description"> 
+                        with mushrooms, green pepper, onion, <br/>
+                        tomato sauce & provolone
+                    </p>
+                </div>
+
+                <div class="menu__item">
+                    <p class="menu__item__name">
+                        Meatball
+                    </p>
+                    <span class="menu__item__price">$ 10.95</span>
+                    <p class="menu__item__description"> 
+                        melted provolone
+                    </p>
+                </div>
+                <div class="menu__item">
+                    <p class="menu__item__name">
+                        Chicken Parmesan Sub
+                    </p>
+                    <span class="menu__item__price">$ 10.95</span>
+                    <p class="menu__item__description"> 
+                        filet of chicken, tomato sauce & provolone
+                    </p>
+                </div>
+                <div class="menu__item">
+                    <p class="menu__item__name">
+                        Eggplant Parmesan Sub
+                    </p>
+                    <span class="menu__item__price">$ 10.95</span>
+                    <p class="menu__item__description"> 
+                        tender eggplant, tomato sauce & provolone
+                    </p>
+                </div>
+                <div class="menu__item">
+                    <p class="menu__item__name">
+                        Fish Sub (Flounder)
+                    </p>
+                    <span class="menu__item__price">$ 10.95</span>
+                    <p class="menu__item__description"> 
+                        lettuce, tomato, onion and tartar sauce
+                    </p>
+                </div>
+                <div class="menu__item">
+                    <p class="menu__item__name">
+                        Italian Cold Cut
+                    </p>
+                    <span class="menu__item__price">$ 10.95</span>
+                    <p class="menu__item__description"> 
+                        lettuce, tomato, onion, vinegar dressing & parmesan cheese
+                    </p>
+                </div>
+            </div>
+
+            <p class="menu__category"> Wraps</p>
+            <div class="menu__items__grid">
+                <div class="menu__item">
+                    <p class="menu__item__name">
+                        Buffalo Chicken
+                    </p>
+                    <span class="menu__item__price">$ 9.95</span>
+                    <p class="menu__item__description"> 
+                        lettuce, tomato, blue cheese
+                    </p>
+                </div>
+                <div class="menu__item">
+                    <p class="menu__item__name">
+                        Grilled Chicken Caesar
+                    </p>
+                    <span class="menu__item__price">$ 9.95</span>
+                    <p class="menu__item__description"> 
+                        lettuce, tomato, caesar dressing
+                    </p>
+                </div>
+                <div class="menu__item">
+                    <p class="menu__item__name">
+                        Shrimp Salad
+                    </p>
+                    <span class="menu__item__price">$ 12.95</span>
+                    <p class="menu__item__description"> 
+                        Lettuce and tomato
+                    </p>
+                </div>
+                <div class="menu__item">
+                    <p class="menu__item__name">
+                        Chicken Salad
+                    </p>
+                    <span class="menu__item__price">$ 9.95</span>
+                    <p class="menu__item__description"> 
+                        Lettuce and tomato
+                    </p>
+                </div>
+                <div class="menu__item">
+                    <p class="menu__item__name">
+                        Tuna Salad
+                    </p>
+                    <span class="menu__item__price">$ 10.95</span>
+                    <p class="menu__item__description"> 
+                        Lettuce and tomato
+                    </p>
+                </div>
+            </div>
+            </div> 
+
+            <!----------------------------Indian Food-------------------------->
+            <div class="hidden menuGroup" id="indian">
+                <p class="menu__category"> Vegetable Specialties</p>
+                <div class="menu__items__grid">
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Mattar Paneer
+                        </p>
+                        <span class="menu__item__price">$ 13.95</span>
+                        <p class="menu__item__description"> 
+                            homemade cheese. gently cooked with
+                            peas and spices
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Palak Paneer
+                        </p>
+                        <span class="menu__item__price">$ 13.95</span>
+                        <p class="menu__item__description"> 
+                            Homemade cheese. fresh spinach, seasonings and spices
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Aloo Gobi
+                        </p>
+                        <span class="menu__item__price">$ 12.95</span>
+                        <p class="menu__item__description"> 
+                            Cauliflower and potatoes. onions, tomatoes and delicate spices
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Mixed Vegetables
+                        </p>
+                        <span class="menu__item__price">$ 12.95</span>
+                        <p class="menu__item__description"> 
+                            Fresh vegetables. mild curry spices
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Shahi Paneer
+                        </p>
+                        <span class="menu__item__price">$ 13.95</span>
+                        <p class="menu__item__description"> 
+                            Cubes of homemade cheese. authentic spices. tomato cream sauce
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Paneer Jalfrezi
+                        </p>
+                        <span class="menu__item__price">$ 13.95</span>
+                        <p class="menu__item__description"> 
+                            Homemade cheese. green peppers, broccoli, mushrooms, onions, tomatoes & Indian herbs
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Channa Masala
+                        </p>
+                        <span class="menu__item__price">$ 11.95</span>
+                        <p class="menu__item__description"> 
+                            Chick peas, tomatoes, onions, & Masala sauce
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Malai Koftas
+                        </p>
+                        <span class="menu__item__price">$ 13.95</span>
+                        <p class="menu__item__description"> 
+                            pan fried veggie fritters. cooked with nuts in cream sauce
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Choley Palak
+                        </p>
+                        <span class="menu__item__price">$ 13.95</span>
+                        <p class="menu__item__description"> 
+                            Chick peas and spinach simmered with Indian herbs and spices
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Vegetable Korma
+                        </p>
+                        <span class="menu__item__price">$ 13.95</span>
+                        <p class="menu__item__description"> 
+                            vegetables with authentic spices.  cream sauce
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <!----------------------------Brunch Food-------------------------->
+            <div class="hidden menuGroup" id="brunch">
+                <p class="menu__category"> Eggs</p>
+                <div class="menu__items__grid">
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Two Any Style
+                        </p>
+                        <span class="menu__item__price">$ 6.95</span>
+                        <p class="menu__item__description"> 
+                            ham, bacon, sausage, or corn beef hash 
+                            ( + $2 )
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Steak & Eggs
+                        </p>
+                        <span class="menu__item__price">$ 14.95</span>
+                        <p class="menu__item__description"> 
+                            Home fries
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Eggs Benedict
+                        </p>
+                        <span class="menu__item__price">$ 9.95</span>
+                        <p class="menu__item__description"> 
+                            home fries
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Tuna Melt
+                        </p>
+                        <span class="menu__item__price">$ 9.95</span>
+                        <p class="menu__item__description"> 
+                            home fries
+                        </p>
+                    </div>
+                </div>
+                <p class="menu__category"> Omelettes <br/> 
+                    *Served all day long <br/> 
+                    served w/ fries or home fries & toast</p>
+                <div class="menu__items__grid">
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Feta & Spinach
+                        </p>
+                        <span class="menu__item__price">$ 8.95</span>
+                        <p class="menu__item__description">
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Feta & Tomato
+                        </p>
+                        <span class="menu__item__price">$ 8.95</span>
+                        <p class="menu__item__description"> 
+                            
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Cheese
+                        </p>
+                        <span class="menu__item__price">$ 7.95</span>
+                        <p class="menu__item__description"> 
+                        
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            spanish
+                        </p>
+                        <span class="menu__item__price">$ 8.95</span>
+                        <p class="menu__item__description"> 
+                            Sautéed onions, green peppers, picante sauce
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Ham & Cheese
+                        </p>
+                        <span class="menu__item__price">$ 8.95</span>
+                        <p class="menu__item__description"> 
+
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Western 
+                        </p>
+                        <span class="menu__item__price">$ 8.95</span>
+                        <p class="menu__item__description"> 
+                            Sautéed onions, green peppers, ham
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Mushroom & Swiss 
+                        </p>
+                        <span class="menu__item__price">$ 8.95</span>
+                        <p class="menu__item__description"> 
+                            
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Veggie 
+                        </p>
+                        <span class="menu__item__price">$ 8.95</span>
+                        <p class="menu__item__description"> 
+                            assorted vegetables
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <!----------------------------Dessert Food------------------------->
+            <div class="hidden menuGroup" id="dessert">
+                <p class="menu__category"> All-Natural Ice Cream</p>
+                <div class="menu__items__grid">
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            One Scoop
+                        </p>
+                        <span class="menu__item__price">$ 2.50</span>
+                        <p class="menu__item__description"> 
+                            vanilla, chocolate, strawberry, or coffee
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Two Scoops
+                        </p>
+                        <span class="menu__item__price">$ 3.50</span>
+                        <p class="menu__item__description"> 
+                            vanilla, chocolate, strawberry, or coffee
+                        </p>
+                    </div>
+                </div>
+                <p class="menu__category"> Desserts</p>
+                <div class="menu__items__grid">
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Apple Pie
+                        </p>
+                        <span class="menu__item__price">$ 3.95</span>
+                        <p class="menu__item__description">
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Apple Pie a la Mode
+                        </p>
+                        <span class="menu__item__price">$ 5.95</span>
+                        <p class="menu__item__description"> 
+                            
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Pecan Pie
+                        </p>
+                        <span class="menu__item__price">$ 4.50</span>
+                        <p class="menu__item__description"> 
+                        
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Lemon Meringue
+                        </p>
+                        <span class="menu__item__price">$ 3.95</span>
+                        <p class="menu__item__description"> 
+                        
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Creamy cheescake
+                        </p>
+                        <span class="menu__item__price">$ 3.95</span>
+                        <p class="menu__item__description"> 
+
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Coconut Cake 
+                        </p>
+                        <span class="menu__item__price">$ 3.95</span>
+                        <p class="menu__item__description"> 
+                            
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Carrot Cake 
+                        </p>
+                        <span class="menu__item__price">$ 3.95</span>
+                        <p class="menu__item__description"> 
+                            
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Indian Gulab Jaman 
+                        </p>
+                        <span class="menu__item__price">$ 8.95</span>
+                        <p class="menu__item__description"> 
+                            
+                        </p>
+                    </div>
+                </div>
+                <p class="menu__category"> Beverages</p>
+                <div class="menu__items__grid">
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Soft Drinks
+                        </p>
+                        <span class="menu__item__price">$ 2.50</span>
+                        <p class="menu__item__description">
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Coffee
+                        </p>
+                        <span class="menu__item__price">$ 2.50</span>
+                        <p class="menu__item__description"> 
+                            
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Iced Tea
+                        </p>
+                        <span class="menu__item__price">$ 2.50</span>
+                        <p class="menu__item__description"> 
+                        
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Lemonade
+                        </p>
+                        <span class="menu__item__price">$ 2.50</span>
+                        <p class="menu__item__description"> 
+                        
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Milk
+                        </p>
+                        <span class="menu__item__price">$ 2.75</span>
+                        <p class="menu__item__description"> 
+
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Chocolate Milk 
+                        </p>
+                        <span class="menu__item__price">$ 2.95</span>
+                        <p class="menu__item__description"> 
+                            
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                        Green Tea 
+                        </p>
+                        <span class="menu__item__price">$ 2.95</span>
+                        <p class="menu__item__description"> 
+                            
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Hot Chocolate
+                        </p>
+                        <span class="menu__item__price">$ 2.50</span>
+                        <p class="menu__item__description"> 
+                            
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Mango Lassi
+                        </p>
+                        <span class="menu__item__price">$ 3.75</span>
+                        <p class="menu__item__description"> 
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+ 
+    </section>
+
+    <!----------------------------TAKEOUT------------------------------------>
+
+    <section class="menu takeout" id = "Carryout">
+        <img src="./logo/tambers-carryout_logo_full-transperent.png" alt="" class="menu__logo">
+        <p><b>Mon - Thu:</b> 10am - 10pm &ensp;
+           <b>Fri: </b> 10am - 11pm &ensp;
+           <b> Sat: </b> 9am - 11pm &ensp;
+           <b> Sun: </b> 9am - 10pm</p>
+        <div class="menu__toggles">
+            <label class="menu__toggles__button takeout_toggle" id ="western__takeout">Western</label>
+            <label class="menu__toggles__button takeout_toggle" id="indian__takeout">Indian</label>
+        </div>
+
+        <div class="menuWrapper">
+            <div class="current__takeout menuGroup takeout_group" id ="western__takeout">
+                <p class="menu__category"> Tasty Tizers</p>
+                <div class="menu__items__grid">
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Fried Calamari
+                        </p>
+                        <span class="menu__item__price">$ 10.95</span>
+                        <p class="menu__item__description"> 
+                            served with marinara sauce
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Fried Shrimp
+                        </p>
+                        <span class="menu__item__price">$ 8.95</span>
+                        <p class="menu__item__description"> 
+                            6 jumbo shrimp
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Buffalo Tenders
+                        </p>
+                        <span class="menu__item__price">$ 8.95</span>
+                        <p class="menu__item__description"> 
+                            tender, juicy. served with celery, <br/> ranch dressing 
+                        </p>
+                    </div>
+
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Fried Zucchini
+                        </p>
+                        <span class="menu__item__price">$ 8.95</span>
+                        <p class="menu__item__description"> 
+                            ranch dressing 
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Buffalo Wings
+                        </p>
+                        <span class="menu__item__price">$ 8.95</span>
+                        <p class="menu__item__description"> 
+                        celery and blue cheese 
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Fried Clam Strips
+                        </p>
+                        <span class="menu__item__price">$ 6.95</span>
+                        <p class="menu__item__description"> 
+                            served with cocktail sauce
+                        </p>
+                    </div>
+                </div>
+
+                <p class="menu__category"> Submarines</p>
+                <div class="menu__items__grid">
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Cheese Steak
+                        </p>
+                        <span class="menu__item__price">$ 10.95</span>
+                        <p class="menu__item__description"> 
+                            lettuce, tomato, onions, provolone
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Italian Cheese Steak
+                        </p>
+                        <span class="menu__item__price">$ 10.95</span>
+                        <p class="menu__item__description"> 
+                            with mushrooms, green pepper, onion, <br/>
+                            tomato sauce & provolone
+                        </p>
+                    </div>
+
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Meatball
+                        </p>
+                        <span class="menu__item__price">$ 10.95</span>
+                        <p class="menu__item__description"> 
+                            melted provolone
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Chicken Parmesan Sub
+                        </p>
+                        <span class="menu__item__price">$ 10.95</span>
+                        <p class="menu__item__description"> 
+                            filet of chicken, tomato sauce & provolone
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Eggplant Parmesan Sub
+                        </p>
+                        <span class="menu__item__price">$ 10.95</span>
+                        <p class="menu__item__description"> 
+                            tender eggplant, tomato sauce & provolone
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Fish Sub (Flounder)
+                        </p>
+                        <span class="menu__item__price">$ 10.95</span>
+                        <p class="menu__item__description"> 
+                            lettuce, tomato, onion and tartar sauce
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Italian Cold Cut
+                        </p>
+                        <span class="menu__item__price">$ 10.95</span>
+                        <p class="menu__item__description"> 
+                            lettuce, tomato, onion, vinegar dressing & parmesan cheese
+                        </p>
+                    </div>
+                </div>
+
+                <p class="menu__category"> Wraps</p>
+                <div class="menu__items__grid">
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Buffalo Chicken
+                        </p>
+                        <span class="menu__item__price">$ 9.95</span>
+                        <p class="menu__item__description"> 
+                            lettuce, tomato, blue cheese
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Grilled Chicken Caesar
+                        </p>
+                        <span class="menu__item__price">$ 9.95</span>
+                        <p class="menu__item__description"> 
+                            lettuce, tomato, caesar dressing
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Shrimp Salad
+                        </p>
+                        <span class="menu__item__price">$ 12.95</span>
+                        <p class="menu__item__description"> 
+                            Lettuce and tomato
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Chicken Salad
+                        </p>
+                        <span class="menu__item__price">$ 9.95</span>
+                        <p class="menu__item__description"> 
+                            Lettuce and tomato
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Tuna Salad
+                        </p>
+                        <span class="menu__item__price">$ 10.95</span>
+                        <p class="menu__item__description"> 
+                            Lettuce and tomato
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hiddenTakeout menuGroup takeout_group" id="indian__takeout">
+                <p class="menu__category"> Vegetable Specialties</p>
+                <div class="menu__items__grid">
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Mattar Paneer
+                        </p>
+                        <span class="menu__item__price">$ 13.95</span>
+                        <p class="menu__item__description"> 
+                            homemade cheese. gently cooked with
+                            peas and spices
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Palak Paneer
+                        </p>
+                        <span class="menu__item__price">$ 13.95</span>
+                        <p class="menu__item__description"> 
+                            Homemade cheese. fresh spinach, seasonings and spices
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Aloo Gobi
+                        </p>
+                        <span class="menu__item__price">$ 12.95</span>
+                        <p class="menu__item__description"> 
+                            Cauliflower and potatoes. onions, tomatoes and delicate spices
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Mixed Vegetables
+                        </p>
+                        <span class="menu__item__price">$ 12.95</span>
+                        <p class="menu__item__description"> 
+                            Fresh vegetables. mild curry spices
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Shahi Paneer
+                        </p>
+                        <span class="menu__item__price">$ 13.95</span>
+                        <p class="menu__item__description"> 
+                            Cubes of homemade cheese. authentic spices. tomato cream sauce
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Paneer Jalfrezi
+                        </p>
+                        <span class="menu__item__price">$ 13.95</span>
+                        <p class="menu__item__description"> 
+                            Homemade cheese. green peppers, broccoli, mushrooms, onions, tomatoes & Indian herbs
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Channa Masala
+                        </p>
+                        <span class="menu__item__price">$ 11.95</span>
+                        <p class="menu__item__description"> 
+                            Chick peas, tomatoes, onions, & Masala sauce
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Malai Koftas
+                        </p>
+                        <span class="menu__item__price">$ 13.95</span>
+                        <p class="menu__item__description"> 
+                            pan fried veggie fritters. cooked with nuts in cream sauce
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Choley Palak
+                        </p>
+                        <span class="menu__item__price">$ 13.95</span>
+                        <p class="menu__item__description"> 
+                            Chick peas and spinach simmered with Indian herbs and spices
+                        </p>
+                    </div>
+                    <div class="menu__item">
+                        <p class="menu__item__name">
+                            Vegetable Korma
+                        </p>
+                        <span class="menu__item__price">$ 13.95</span>
+                        <p class="menu__item__description"> 
+                            vegetables with authentic spices.  cream sauce
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </section>
+
+ <!----------------------------Social Media Bar----------------------------------->
+
+ <section class="social">
+    <div class="social__icons flex flex-ai-c flex-jc-c">
+        <div class="social__icon">
+            <a href="https://www.facebook.com/Tambers-Restaurant-136988159673313/"><img src="./images/facebook.png" alt="facebook" ></a>
+            <a href="https://goo.gl/maps/zod1Bx1TnBiXUGF27"><img src="./images/google.png" alt="google"></a>
+        </div>
+    </div>
+ </section>
+
+  <!-----------------------------FOOTER---------------------------------------->
+<section class="footer">
+    <div class="footer__wrapper">
+        <div class="footer__contact flex flex-jc-c flex-ai-c">
+            <p>3327 St Paul St, Baltimore, MD 21218</p>
+            <p>Call: 410-243-5777</p>
+            <p>Fax: 410-243-9306</p>
+        </div>
+        <div class="footer__credits  flex flex-jc-c flex-ai-c">
+            <p>designed by me</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+</div>
     
     <script src="./app/js/script.js"></script>
+
 </body>
 
 </html>

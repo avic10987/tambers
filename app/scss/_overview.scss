@@ -1,0 +1,67 @@
+.overview {
+    max-width: 100%;
+    min-height: 400px;
+    padding: 4.6875rem 10.9375rem;
+    position: relative;
+
+    @include breakpoint-down(medium) { //mobile +tablet styles
+        padding: 4.6875rem 2.8125rem;
+    }
+    
+    background-color: $tambersGold;
+
+    &__grid {
+        display: grid;
+        gap: 4.375rem;
+        grid-template-columns: 2fr 1fr;
+
+        @include breakpoint-down(medium) { //mobile +tablet styles
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__description {
+        line-height: 1.4;
+
+    }
+
+    &__contact {
+        justify-self: center;
+        @include breakpoint-down(medium) { //mobile +tablet styles
+            justify-self: start;
+        }
+
+        line-height: 1.3;
+    }
+
+    &__button {
+        transform: translate(-50%, -50%);
+
+          background-color: $tambersGold;
+          border: 2px solid black;
+          border-radius: .130rem;
+          color: black;
+          font-weight: 500;
+          padding: .575em 1.8704em;          
+    }
+     
+    &__button:hover {
+        background-color: black;
+        color: $tambersGold;
+
+    }
+    
+}
+
+.break {    
+    max-width: 100%;
+    min-height: 400px;
+    padding: 0 0;
+    position: relative;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    
+}

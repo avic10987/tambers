@@ -1,13 +1,16 @@
 .hero {
-    min-height: 100vh;
+    min-height: calc(100vh - 1px);
+    min-width: 100%;
     position: relative;
+    bottom: 0;
+    left: 0;
+    top: 0;
 
-    &__slides {
-        min-height: 100vh;
-        min-width: 100%;
-        
+    background-color: black;
+
+    &__test {
+        padding: 9.375rem;
     }
-
     &__slide {
         
         background-image: 
@@ -21,19 +24,34 @@
         background-size: cover;
         background-position: center center;
 
-        z-index: 3;
-        position: absolute;
-        min-height: 75vh;
-        min-width: 100%;
-        overflow: hidden;
         top: 0;
         left: 0;
-
-        animation: slideshow 12s linear 0s infinite;
-
+        z-index: 3;
+        position: absolute;
+        min-height: 100vh;
+        min-width: 100%;
+        overflow: hidden;
         text-align: center;
-        align-items: center;
-        justify-content: center;
+
+        animation: slideshow 21s linear 0s infinite;
+
+        &__text {
+            padding-right: 20px;
+            padding-left: 20px;
+
+            h1 {
+                color: white;
+                font-size: 2rem;
+
+                padding-top: 30vh;
+            }
+
+            p {
+                color: $tambersGold;
+                font-size: 1.175rem;
+                font-weight: 600;
+            }
+        }
     }
 
 
@@ -43,39 +61,22 @@
             rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)
             ), 
-                url(../../images/butter-chx.jpeg);
+                url(../../images/easy-fried-shrimp--hero-01-.jpg);
 
         z-index: 2;
-        animation-delay: 4s;
+        animation-delay: 7s;
     }
 
     &__slide:nth-child(3) {
         background-image: 
             linear-gradient(
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
             ), 
             url(../../images/Lamb-Saagwala-2.jpg);
 
         z-index: 2;
-        animation-delay: 8s;
+        animation-delay: 14s;
     }
 
-    &__slide h1 {
-        font-family: $arimo;
-        color: white;
-        
-        padding-top: 30vh;
-    }
-
-    /*
-    &__text {
-        color: blue;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 4;
-
-    }
-    */
 }
