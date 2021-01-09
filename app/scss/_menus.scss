@@ -28,7 +28,8 @@
     }
     
     &__logo {
-        height: 12.5rem;
+        height: 11.5rem;
+        padding-bottom: 1rem;
     }
 
     &__carryout {
@@ -81,14 +82,13 @@
         display: grid;
         gap: 2.5rem;
         grid-template-columns: repeat(4, 1fr);
-        margin: auto;
+        margin: 0 auto;
         padding-top: 402.5rempx;
-        width: 75%;
         
         @include breakpoint-down(medium) { //mobile +tablet styles
             gap: 15px;
             grid-template-columns: repeat(2, 1fr);
-            }
+        } 
 
         &__button{
             cursor: pointer;

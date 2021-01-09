@@ -368,8 +368,8 @@ a, a:visited, a:hover {
   min-width: 100%;
   overflow: hidden;
   text-align: center;
-  -webkit-animation: slideshow 21s linear 0s infinite;
-          animation: slideshow 21s linear 0s infinite;
+  -webkit-animation: slideshow 12s linear 0s infinite;
+          animation: slideshow 12s linear 0s infinite;
 }
 
 .hero__slide__text {
@@ -393,16 +393,16 @@ a, a:visited, a:hover {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../images/easy-fried-shrimp--hero-01-.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/easy-fried-shrimp--hero-01-.jpg);
   z-index: 2;
-  -webkit-animation-delay: 7s;
-          animation-delay: 7s;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
 }
 
 .hero__slide:nth-child(3) {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url(../../images/Lamb-Saagwala-2.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../../images/Lamb-Saagwala-2.jpg);
   z-index: 2;
-  -webkit-animation-delay: 14s;
-          animation-delay: 14s;
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
 }
 
 .overview {
@@ -511,7 +511,8 @@ a, a:visited, a:hover {
 }
 
 .menu__logo {
-  height: 12.5rem;
+  height: 11.5rem;
+  padding-bottom: 1rem;
 }
 
 .menu__carryout {
@@ -565,9 +566,8 @@ a, a:visited, a:hover {
   gap: 2.5rem;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-  margin: auto;
+  margin: 0 auto;
   padding-top: 402.5rempx;
-  width: 75%;
 }
 
 @media (max-width: 63.9375em) {

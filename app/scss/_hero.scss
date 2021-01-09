@@ -33,7 +33,7 @@
         overflow: hidden;
         text-align: center;
 
-        animation: slideshow 21s linear 0s infinite;
+        animation: slideshow 12s linear 0s infinite;
 
         &__text {
             padding-right: 20px;
@@ -64,7 +64,7 @@
                 url(../../images/easy-fried-shrimp--hero-01-.jpg);
 
         z-index: 2;
-        animation-delay: 7s;
+        animation-delay: 4s;
     }
 
     &__slide:nth-child(3) {
@@ -76,7 +76,7 @@
             url(../../images/Lamb-Saagwala-2.jpg);
 
         z-index: 2;
-        animation-delay: 14s;
+        animation-delay: 8s;
     }
 
 }
