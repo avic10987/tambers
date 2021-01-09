@@ -105,6 +105,7 @@ html {
           box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
+  scroll-behavior: smooth;
 }
 
 *, *::before, *::after {
@@ -174,12 +175,12 @@ a, a:visited, a:hover {
   position: fixed;
   font-family: "Montserrat", "Montserrat", sans-serif;
   min-width: 100%;
-  -webkit-transition: background-color .5s ease;
-  transition: background-color .5s ease;
+  -webkit-transition: background-color 300ms ease;
+  transition: background-color 300ms ease;
 }
 
 .header__scrolling-active {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .header__scrolling-active .header__logo img.large {
@@ -192,7 +193,7 @@ a, a:visited, a:hover {
     background-color: transparent;
   }
   .header__scrolling-active .header__menu {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.7);
     margin-top: 42px;
     padding: 12px;
   }
@@ -228,6 +229,8 @@ a, a:visited, a:hover {
 
 .header__logo img.large {
   height: 6.45rem;
+  -webkit-transition: height 300ms ease;
+  transition: height 300ms ease;
 }
 
 .header__menu > span {
@@ -457,6 +460,8 @@ a, a:visited, a:hover {
   color: black;
   font-weight: 500;
   padding: .575em 1.8704em;
+  -webkit-transition: all ease-in-out 250ms;
+  transition: all ease-in-out 250ms;
 }
 
 .overview__button:hover {
@@ -640,6 +645,7 @@ a, a:visited, a:hover {
 }
 
 .takeout .menu__toggles {
+  padding-top: 2rem;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
 }
@@ -683,7 +689,6 @@ a, a:visited, a:hover {
 
 .social__icon img:hover {
   opacity: 1;
-  height: 1.375rem;
 }
 
 .footer {

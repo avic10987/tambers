@@ -5,11 +5,11 @@
   font-family: $Monts;
   min-width: 100%;
 
-  transition: background-color .5s ease;
+  transition: background-color 300ms ease;
 
 ////////////// on scroll styles /////////////
   &__scrolling-active {
-      background-color: black;
+      background-color: rgba(0, 0, 0, .7);
 
       .header__logo { 
         img.large { 
@@ -20,7 +20,7 @@
         min-height: 40px;
         background-color: transparent;
         .header__menu {
-          background-color: black;
+          background-color: rgba(0, 0, 0, .7);
           margin-top: 42px;
           padding: 12px;
         }
@@ -63,6 +63,7 @@
     }
     img.large { //desktop
         height: 6.45rem; //140px
+        transition: height 300ms ease;
     }
   }
 

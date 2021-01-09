@@ -60,7 +60,6 @@ const scrollClass = 'header__scrolling-active'
 
 window.addEventListener('scroll', () => {
     if (window.scrollY >10 && !(headerElem.classList.contains(scrollClass))) {
-        //console.log('scrolling')
         headerElem.classList.add(scrollClass)
     }
     
@@ -73,6 +72,12 @@ window.addEventListener('scroll', () => {
     }
     
 })
+
+////////////////// food menu functionality ///////////////////////
+
+
+
+
 
 
 ////////////////// food menu functionality ///////////////////////
